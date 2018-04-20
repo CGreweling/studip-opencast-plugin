@@ -14,8 +14,8 @@ use Studip\Button,
     </label>
 
     <input class="oc_input" type="text" maxlength="255" name="creator" id="creator" value="<?=get_fullname_from_uname($GLOBALS['auth']->auth['uname']) ?>" required>
-    
-    
+
+
     <label id="recordingDateLabel" class="scheduler-label" for="recordDate">
         <h4><span><?= _('Aufnahmedatum') ?></span></h4>
     </label>
@@ -74,7 +74,7 @@ use Studip\Button,
     <input type="text" maxlength="255" id="language" name="language" value="<?='de'?>">
     <br>
     </div>
-    
+
     <label id="descriptionLabel" for="description">
         <h4><span><?= _('Beschreibung') ?></span></h4>
     </label>
@@ -90,7 +90,7 @@ use Studip\Button,
     <div id="progressbarholder">
         <div id="progressbar"><div id='progressbar-label'></div></div>
     </div>
-    
+
     <input type="hidden" value="" name="total_file_size" id="total_file_size" />
     <input type="hidden" value="" name="file_name" id="file_name" />
      <br>
@@ -99,10 +99,8 @@ use Studip\Button,
              <?=_("Laden sie nur Medien hoch an denen sie das Copyright besitzen!")?>
          </p>
          <p>
-             <?=_("Die möglichen Ausnahmen über §52a UrhG sind sehr eingeschränkt, so dürfen nur maximal 5 minütige Sequenzen aus Filmen oder Musikaufnahmen bereitgestellt werden, sofern diese einen geringen Umfang des Gesamtwerkes ausmachen.")?>
-         </p>
-         <p>
-             <?=_("Nach §52a UrhG dürfen Kinofilme oder Ausschnitte daraus frühstens 2 Jahre nach der Verwertung im Kino und nur mit Einwilligung des Berechtigten zugänglich gemacht werden!")?>
+             <?=_("Nach §60 dürfen nur maximal 5 minütige Sequenzen aus Filmen oder Musikaufnahmen bereitgestellt werden, sofern diese einen geringen Umfang des Gesamtwerkes ausmachen.")?>
+             <a href="https://elan-ev.de/themen_p60.php"§60 UrhG Zusammenfassung</a>
          </p>
          <p>
              <?=_("Medien bei denen Urheberrechtsverstöße vorliegen, werde ohne vorherige Ankündigung umgehend gelöscht.")?>
