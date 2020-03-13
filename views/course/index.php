@@ -116,6 +116,14 @@ if ($GLOBALS['perm']->have_studip_perm('tutor', $this->course_id)) {
                         'data-dialog' => 'size=auto'
                     ]);
             }
+            if ($perm->have_perm('root')) {
+                $actions->addLink($_("Video aufnehmen"),
+                    $controller->url_for('opencast/Studio-url'),
+                    new Icon('record', 'clickable'), [
+                        'data-dialog' => 'size=auto'
+                    ]);
+            }
+
         }
 
         if ($coursevis == 'visible') {
